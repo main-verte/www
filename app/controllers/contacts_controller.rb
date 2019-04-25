@@ -6,7 +6,15 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     @contact.save
-    # redirect to 'message succesfully send page'
+    if @contact.save
+      AdminMailer.general_message(@contact).deliver_now
+      redirect_to root_path, notice: "Thanks for your message"
+     else
+       render :new
+    end
+  end
+
+  def thanks
   end
 
   private
