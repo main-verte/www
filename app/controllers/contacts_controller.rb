@@ -14,9 +14,6 @@ class ContactsController < ApplicationController
     end
   end
 
-  def thanks
-  end
-
   private
 
   def contact_params
