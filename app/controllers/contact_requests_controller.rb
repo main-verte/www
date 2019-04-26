@@ -1,10 +1,10 @@
-class ContactsController < ApplicationController
+class ContactRequestsController < ApplicationController
   def new
-    @contact = Contact.new
+    @contact = ContactRequest.new
   end
 
   def create
-    @contact = Contact.new(contact_params)
+    @contact = ContactRequest.new(contact_params)
     @contact.save
     if @contact.save
       AdminMailer.general_message(@contact).deliver_now
@@ -17,6 +17,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:content, :email)
+    params.require(:contact_request).permit(:content, :email)
   end
 end

@@ -1,4 +1,4 @@
-class Contact < ApplicationRecord
+class ContactRequest < ApplicationRecord
   validates :email,
             presence: :true,
             format: {
