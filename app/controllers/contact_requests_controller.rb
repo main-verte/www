@@ -1,4 +1,5 @@
 class ContactRequestsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:new]
   def new
     @contact = ContactRequest.new
   end
