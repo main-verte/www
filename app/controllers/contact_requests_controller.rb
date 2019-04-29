@@ -1,5 +1,5 @@
 class ContactRequestsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:new, :create]
+  skip_before_action :authenticate_user!, only: %i[new create]
   invisible_captcha only: [:new_contact_request]
   def new
     @contact = ContactRequest.new
@@ -11,8 +11,8 @@ class ContactRequestsController < ApplicationController
     if @contact.save
       AdminMailer.general_message(@contact).deliver_now
       redirect_to root_path, notice: "Thanks for your message"
-     else
-       render :new
+    else
+      render :new
     end
   end
 

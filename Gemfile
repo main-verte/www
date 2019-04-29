@@ -20,6 +20,13 @@ gem 'invisible_captcha'
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'letter_opener'
+  gem 'bullet'
+  gem 'annotate'
+  gem 'rubocop' # , '~> 0.67.2', require: false
+  gem 'rubocop-performance'
+  gem 'rails-erd'
+  gem 'brakeman'
+  gem 'overcommit'
 end
 
 group :development, :test do
