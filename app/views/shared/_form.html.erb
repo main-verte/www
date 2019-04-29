@@ -1,4 +1,5 @@
 <%= form_for(@contact) do |f| %>
+  <%= invisible_captcha %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
       <h3><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h3>
@@ -22,5 +23,6 @@
   </div>
 
   <%= f.submit 'Submit', class: 'btn btn-primary' %>
+  <%= invisible_captcha :subtitle, :topic %>
 <% end %>
 

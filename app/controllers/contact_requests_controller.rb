@@ -1,5 +1,6 @@
 class ContactRequestsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:new]
+  skip_before_action :authenticate_user!, only: [:new, :create]
+  invisible_captcha only: [:new_contact_request]
   def new
     @contact = ContactRequest.new
   end
