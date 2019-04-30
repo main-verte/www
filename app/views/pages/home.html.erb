@@ -1,4 +1,24 @@
-<div class="container">
-  <h1>Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-fluid p-0">
+  <div id="wrapper-home-banner">
+    <div class="background-color-panel d-flex flex-column flex-sm-row align-items-center justify-content-around h-65vh">
+      <div class="align-self-center text-center">
+        <h1 class="text-uppercase">Digital agency doing business</h1>
+        <p>We do a lot of digital creative business all the time and we are good at it.</p>
+      </div>
+      <%= image_tag "https://placehold.it/550x300", class: "d-none d-sm-block" %>
+    </div>
+  </div>
+  <div id="wrapper-office-banner" class="h-85vh">
+    <%= image_tag "https://placehold.it/1200x550", class: "mt-5 d-none d-sm-block", id: "office-photo-row" %>
+  </div>
+  <div class="text-center pb-5">
+    <h2>Selected work</h2>
+  </div>
+    <section class="d-flex flex-column flex-sm-row justify-content-around">
+      <%= image_tag "https://placehold.it/400x500" %>
+      <div class="w-500px align-self-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero perspiciatis velit voluptas, impedit quasi veritatis quod rerum error doloribus. Assumenda, dignissimos esse culpa debitis architecto similique impedit dolore iste repellat.</p>
+      </div>
+    </section>
 </div>
+

@@ -1,1 +1,11 @@
 // Specific CSS for your home-page
+.background-color-panel {
+  background-image: linear-gradient($light-green, $lighter-green);
+}
+
+
+#office-photo-row {
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
