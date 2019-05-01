@@ -1,24 +1,64 @@
 <div class="container-fluid p-0">
-  <div id="wrapper-home-banner">
-    <div class="background-color-panel d-flex flex-column flex-sm-row align-items-center justify-content-around h-65vh">
+  <!-- Logo -->
+  <header class="background-color-panel d-flex justify-content-center pt-5">
+    <%= link_to root_path do %>
+    <%= image_tag "https://placehold.it/50/50", class: "rounded-circle" %>
+    <% end %>
+  </header>
+  <!-- Hero -->
+  <section>
+    <div class="background-color-panel d-flex flex-column flex-md-row align-items-center justify-content-around h-65vh">
       <div class="align-self-center text-center">
         <h1 class="text-uppercase">Digital agency doing business</h1>
         <p>We do a lot of digital creative business all the time and we are good at it.</p>
       </div>
-      <%= image_tag "https://placehold.it/550x300", class: "d-none d-sm-block" %>
-    </div>
-  </div>
-  <div id="wrapper-office-banner" class="h-85vh">
-    <%= image_tag "https://placehold.it/1200x550", class: "mt-5 d-none d-sm-block", id: "office-photo-row" %>
-  </div>
-  <div class="text-center pb-5">
-    <h2>Selected work</h2>
-  </div>
-    <section class="d-flex flex-column flex-sm-row justify-content-around">
-      <%= image_tag "https://placehold.it/400x500" %>
-      <div class="w-500px align-self-center">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero perspiciatis velit voluptas, impedit quasi veritatis quod rerum error doloribus. Assumenda, dignissimos esse culpa debitis architecto similique impedit dolore iste repellat.</p>
+      <div id="panel-hero" class="d-none d-md-block">
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- Div photo office -->
+  <section>
+    <div class="h-85vh">
+      <%= image_tag "https://placehold.it/1200x550", class: "mt-5 d-none d-sm-block" %>
+    </div>
+  </section>
+  <!-- Selected work -->
+  <section>
+    <div class="text-center pb-5">
+      <h2>Selected work</h2>
+    </div>
+    <article id="selected-work-top">
+      <div class="d-flex flex-column-reverse flex-md-row justify-content-around">
+        <%= image_tag "https://placehold.it/400x500", class: "px-sm-5 flex-grow-1 flex-md-grow-0" %>
+        <div id="selected-work-top-panel" class="browser">
+          <div class="browser-header">
+            <span class="button close"></span>
+            <span class="button minimize"></span>
+            <span class="button maximize"></span>
+          </div>
+          <div class="browser-content"></div>
+        </div>
+        <div class="w-400px align-self-center pb-5">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero perspiciatis velit voluptas, impedit quasi veritatis quod rerum error doloribus. Assumenda, dignissimos esse culpa debitis architecto similique impedit dolore iste repellat.</p>
+        </div>
+      </div>
+    </article>
+    <article id="selected-work-bottom" class="pt-md-5">
+      <div class="d-flex flex-column flex-md-row justify-content-around">
+        <div class="w-400px align-self-center py-5">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero perspiciatis velit voluptas, impedit quasi veritatis quod rerum error doloribus. Assumenda, dignissimos esse culpa debitis architecto similique impedit dolore iste repellat.</p>
+        </div>
+        <%= image_tag "https://placehold.it/400x500", class: "px-sm-5 flex-grow-1 flex-md-grow-0" %>
+        <div id="selected-work-bottom-panel" class="browser">
+          <div class="browser-header">
+            <span class="button close"></span>
+            <span class="button minimize"></span>
+            <span class="button maximize"></span>
+          </div>
+          <div class="browser-content"></div>
+        </div>
+      </div>
+    </article>
+  </section>
 </div>
 
