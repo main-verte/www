@@ -9,8 +9,8 @@
   <section>
     <div class="background-color-panel d-flex flex-column flex-md-row align-items-center justify-content-around h-65vh">
       <div class="align-self-center text-center">
-        <h1 class="text-uppercase">Digital agency doing business</h1>
-        <p>We do a lot of digital creative business all the time and we are good at it.</p>
+        <h1 class="font-weight-bold text-uppercase">Digital agency doing business</h1>
+        <p class="text-muted">We do a lot of digital creative business all the time and we are good at it.</p>
       </div>
       <div id="panel-hero" class="d-none d-md-block">
       </div>
@@ -25,7 +25,7 @@
   <!-- Selected work -->
   <section>
     <div class="text-center pb-5">
-      <h2>Selected work</h2>
+      <h2 class="font-weight-bold">Selected work</h2>
     </div>
     <article id="selected-work-top">
       <div class="d-flex flex-column-reverse flex-md-row justify-content-around">
@@ -61,11 +61,18 @@
     </article>
   </section>
   <!-- Meet the team -->
-  <div class="text-center py-5">
-    <h2>Meet the team</h2>
-  </div>
-  <%= render 'components/team_card' %>
-  <%= render 'shared/form' %>
+  <section>
+    <div class="text-center py-5">
+      <h2 class="font-weight-bold">Meet the team</h2>
+    </div>
+    <%= render 'components/team_card' %>
+  </section>
+  <section class="background-color-panel d-flex justify-content-center h-65vh p-5 mt-5">
+    <div class="form-wrapper w-700px">
+      <h2 class="font-weight-bold">Let's talk</h2>
+      <%= render 'shared/form' %>
+    </div>
+  </section>
 
 
 </div>
