@@ -1,12 +1,16 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+#sidenav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 160px;
+  width: 50px;
+  font-size: $small-font-size;
+  font-weight: bold;
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+  }
 }
