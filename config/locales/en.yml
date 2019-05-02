@@ -30,4 +30,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  home:
+    header: "Digital Agency doing business"
+    subheader: "We do a lot of digital agency business, and we're really good at it."
+  contact-form:
+    form-header: "Let's talk"
+    message-header: "Message"
+    submit: "Send message"

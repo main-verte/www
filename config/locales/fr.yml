@@ -1,0 +1,8 @@
+fr:
+  home:
+    header: "Agence digitale faisant des affaires"
+    subheader: "Notre devise française"
+  contact-form:
+    form-header: "Entrer en contact avec nous"
+    message-header: "Message"
+    submit: "Envoyer le message"
