@@ -1,50 +1,28 @@
 // Specific CSS for your home-page
-.background-color-panel {
-  background: $lighter-green;
+
+.hero-illustration img{
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
 }
 
-#panel-hero {
-  background: url('https://placehold.it/550x300');
-  width: 550px;
-  height: 300px;
+.office-photo img{
+  width: 100%;
+  max-width: 1040px;
+  height: auto;
+  margin: 0 auto;
 }
 
-#selected-work-top, #selected-work-bottom {
-  position: relative;
-}
-// Browser
-.browser {
-  position: absolute;
-  z-index: 5;
-  width: 350px;
-  height: 220px;
-  border: 1px solid $dark;
-  background: white;
-  .browser-header {
-    padding: 0px 5px;
-    height: 20px;
-    border-bottom: 1px solid $dark;
-    background: white;
-  }
-  .browser-content {
-    background: url("https://images.unsplash.com/photo-1554558424-4a02a6451c4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1646&q=80");
-    background-size: cover;
-  }
-}
-#selected-work-top-panel, #selected-work-bottom-panel {
-  left: 15%;
-  top: 50%;
+.selected-work-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto;
 }
 
-@include media-breakpoint-up(md) {
-  #selected-work-top-panel {
-    left: 20%;
-    top: 25%;
-  }
-  #selected-work-bottom-panel {
-    left: 45%;
-    top: 30%;
-  }
+.selected-work-body {
+  max-width: 400px;
 }
 
 .intro-text {
@@ -57,4 +35,20 @@
 .form-wrapper {
   background: white;
   padding: 20px 50px;
+}
+
+.team-mate {
+  width: 270px;
+  max-width: 300px;
+  border: 1px solid $light-gray;
+}
+
+.background-lilac {
+  background-color: $lilac;
+}
+
+@include media-breakpoint-up(sm) {
+  .form-wrapper {
+    width: 550px;
+  }
 }
