@@ -10,4 +10,8 @@ class ApplicationController < ActionController::Base
   def default_url_options
     { locale: I18n.locale == I18n.default_locale ? nil : I18n.locale }
   end
+
+  if Rails.env.production? && ENV['STAGING']
+    http_basic_authenticate_with name: ENV['STAGING_BASIC_AUTH_NAME'], password: ENV['STAGING_BASIC_AUTH_PWD']
+  end
 end
