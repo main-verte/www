@@ -9,8 +9,8 @@
   <section>
     <div class="background-color-panel d-flex flex-column flex-md-row align-items-center justify-content-around h-65vh">
       <div class="align-self-center text-center">
-        <h1 class="font-weight-bold text-uppercase">Digital agency doing business</h1>
-        <p class="text-muted">We do a lot of digital creative business all the time and we are good at it.</p>
+        <h1 class="font-weight-bold text-uppercase"> <%= t('home.header') %> </h1>
+        <p class="text-muted"> <%= t('home.subheader') %> </p>
       </div>
       <div id="panel-hero" class="d-none d-md-block">
       </div>
@@ -69,7 +69,7 @@
   </section>
   <section class="background-color-panel d-flex align-items-start h-65vh p-5 mt-5">
     <div class="form-wrapper w-700px">
-      <h2 class="font-weight-bold">Let's talk</h2>
+      <h2 class="font-weight-bold"> <%= t('contact-form.form-header') %> </h2>
       <%= render 'contact_requests/form' %>
     </div>
   </section>
