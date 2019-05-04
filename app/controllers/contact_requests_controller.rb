@@ -10,7 +10,7 @@ class ContactRequestsController < ApplicationController
     @contact.save
     if @contact.save
       AdminMailer.general_message(@contact).deliver_now
-      redirect_to root_path, notice: "Thanks for your message"
+      redirect_to root_path, notice: t('contact-form.notice')
     else
       render :new
     end

@@ -6,3 +6,8 @@ da:
     form-header: "Kom i kontakt med os"
     message-header: "Besked"
     submit: "Send besked"
+    notice: "Tak for din besked"
+#  company-info:
+#    city: "København"
+#    rights-reserved: "Alle rettigheder forbeholdt"
+

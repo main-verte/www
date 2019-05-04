@@ -6,3 +6,8 @@ fr:
     form-header: "Entrer en contact avec nous"
     message-header: "Message"
     submit: "Envoyer le message"
+    notice: "Merci pour votre message"
+#  company-info:
+#    city: "Copenhague"
+#    rights-reserved: "Tous droits réservés"
+
