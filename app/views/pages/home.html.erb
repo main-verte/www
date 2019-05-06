@@ -12,129 +12,108 @@
         <h1 class="font-weight-bold text-uppercase"> <%= t('home.header') %> </h1>
         <p class="text-muted"> <%= t('home.subheader') %> </p>
       </div>
-      <div id="panel-hero" class="d-none d-md-block">
+      <div class="hero-illustration d-none d-md-block">
+        <%= image_tag 'https://via.placeholder.com/450x250/fbbd2c/808080' %>
       </div>
     </div>
   </section>
   <!-- Div photo office -->
-  <section>
-    <div class="h-85vh">
-      <%= image_tag "https://placehold.it/1200x550", class: "mt-5" %>
+  <section class="mt-md-5">
+    <div class="office-photo my-2 pb-2">
+      <%= image_tag 'https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' %>
     </div>
   </section>
-  <!-- Selected work -->
+  <!-- Div selected work -->
   <section>
-    <div class="text-center pb-5">
-      <h2 class="font-weight-bold">Selected work</h2>
+    <div class="container">
+      <div class="text-center mt-5 pb-5">
+        <h2 class="font-weight-bold">Selected work</h2>
+      </div>
+      <!-- Project A -->
+      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-sm-5">
+        <div class="selected-work-image order-sm-1 pl-sm-5">
+          <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+        </div>
+        <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
+          <h3 class="mt-0">Discover</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
+        </div>
+      </div>
+      <!-- Project B -->
+      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
+        <div class="selected-work-image order-0 pr-sm-5">
+          <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+        </div>
+        <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
+          <h3 class="mt-0">Discover</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
+        </div>
+      </div>
+      <!-- Project C -->
+      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
+        <div class="selected-work-image order-sm-1 pl-sm-5">
+          <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+        </div>
+        <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
+          <h3 class="mt-0">Discover</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
+        </div>
+      </div>
     </div>
-    <article id="selected-work-top">
-      <div class="d-flex flex-column-reverse flex-md-row justify-content-around">
-        <%= image_tag "https://placehold.it/400x500", class: "px-sm-5 flex-grow-1 flex-md-grow-0" %>
-        <div id="selected-work-top-panel" class="browser">
-          <div class="browser-header">
-            <span class="button close"></span>
-            <span class="button minimize"></span>
-            <span class="button maximize"></span>
-          </div>
-        </div>
-      </section>
-      <!-- Div photo office -->
-      <section class="mt-md-5">
-        <div class="office-photo my-2 pb-2">
-          <%= image_tag 'https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' %>
-        </div>
-      </section>
-      <!-- Div selected work -->
-      <section>
-        <div class="container">
-          <div class="text-center mt-5 pb-5">
-            <h2 class="font-weight-bold">Selected work</h2>
-          </div>
-          <!-- Project A -->
-          <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-sm-5">
-            <div class="selected-work-image order-sm-1 pl-sm-5">
-              <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+  </section>
+  <!-- Meet 3W -->
+  <section>
+    <div class="container">
+      <div class="text-center mt-5 pb-5">
+        <h2 class="font-weight-bold">Meet 3W</h2>
+      </div>
+      <div class="team-wrapper d-flex flex-wrap justify-content-center mb-5">
+        <div class="team-mate text-center m-2 flex-grow-1">
+          <div class="team-mate-inner d-flex flex-column align-items-center p-4">
+            <div class="team-header p-4">
+              <%= image_tag "https://placehold.it/100/100", class: "rounded-circle" %>
             </div>
-            <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
-              <h3 class="mt-0">Discover</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
-            </div>
-          </div>
-          <!-- Project B -->
-          <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
-            <div class="selected-work-image order-0 pr-sm-5">
-              <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-            </div>
-            <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
-              <h3 class="mt-0">Discover</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
-            </div>
-          </div>
-          <!-- Project C -->
-          <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
-            <div class="selected-work-image order-sm-1 pl-sm-5">
-              <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-            </div>
-            <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
-              <h3 class="mt-0">Discover</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
+            <div class="team-body">
+              <h4>Hadrien Matringe</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Meet 3W -->
-      <section>
-        <div class="container">
-          <div class="text-center mt-5 pb-5">
-            <h2 class="font-weight-bold">Meet 3W</h2>
-          </div>
-          <div class="team-wrapper d-flex flex-wrap justify-content-center mb-5">
-            <div class="team-mate text-center m-2 flex-grow-1">
-              <div class="team-mate-inner d-flex flex-column align-items-center p-4">
-                <div class="team-header p-4">
-                  <%= image_tag "https://placehold.it/100/100", class: "rounded-circle" %>
-                </div>
-                <div class="team-body">
-                  <h4>Hadrien Matringe</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                </div>
-              </div>
+        <div class="team-mate text-center m-2 flex-grow-1">
+          <div class="team-mate-inner d-flex flex-column align-items-center p-4">
+            <div class="team-header p-4">
+              <%= image_tag "https://placehold.it/100/100", class: "rounded-circle" %>
             </div>
-            <div class="team-mate text-center m-2 flex-grow-1">
-              <div class="team-mate-inner d-flex flex-column align-items-center p-4">
-                <div class="team-header p-4">
-                  <%= image_tag "https://placehold.it/100/100", class: "rounded-circle" %>
-                </div>
-                <div class="team-body">
-                  <h4>Ana Ivan</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                </div>
-              </div>
-            </div>
-            <div class="team-mate text-center m-2 flex-grow-1">
-              <div class="team-mate-inner d-flex flex-column align-items-center p-4">
-                <div class="team-header p-4">
-                  <%= image_tag "https://placehold.it/100/100", class: "rounded-circle" %>
-                </div>
-                <div class="team-body">
-                  <h4>Kristian Sølling</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                </div>
-              </div>
+            <div class="team-body">
+              <h4>Ana Ivan</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Contact form -->
-      <section class="background-lilac py-3 p-sm-5">
-        <div class="container">
-          <div class="form-wrapper">
-            <h2 class="font-weight-bold"> <%= t('contact-form.form-header') %> </h2>
-            <%= render 'contact_requests/form' %>
+        <div class="team-mate text-center m-2 flex-grow-1">
+          <div class="team-mate-inner d-flex flex-column align-items-center p-4">
+            <div class="team-header p-4">
+              <%= image_tag "https://placehold.it/100/100", class: "rounded-circle" %>
+            </div>
+            <div class="team-body">
+              <h4>Kristian Sølling</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact form -->
+  <section class="background-lilac py-3 p-sm-5">
+    <div class="container">
+      <div class="form-wrapper">
+        <h2 class="font-weight-bold"> <%= t('contact-form.form-header') %> </h2>
+        <%= render 'contact_requests/form' %>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
 </div>
 
