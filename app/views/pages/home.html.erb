@@ -8,7 +8,7 @@
   <!-- Hero -->
   <section>
     <div class="background-color-panel d-flex flex-column flex-md-row align-items-center justify-content-around h-65vh">
-      <div class="align-self-center text-center">
+      <div class="hero-text align-self-center text-center">
         <h1 class="font-weight-bold text-uppercase"> <%= t('home.header') %> </h1>
         <p class="text-muted"> <%= t('home.subheader') %> </p>
       </div>
@@ -30,7 +30,7 @@
         <h2 class="font-weight-bold">Selected work</h2>
       </div>
       <!-- Project A -->
-      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-sm-5">
+      <div class="selected-work d-flex flex-column flex-sm-row align-items-center justify-content-around pt-sm-5">
         <div class="selected-work-image order-sm-1 pl-sm-5">
           <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
         </div>
@@ -40,7 +40,7 @@
         </div>
       </div>
       <!-- Project B -->
-      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
+      <div class="selected-work d-flex flex-column flex-sm-row align-items-center justify-content-around pt-5">
         <div class="selected-work-image order-0 pr-sm-5">
           <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
         </div>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <!-- Project C -->
-      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
+      <div class="selected-work d-flex flex-column flex-sm-row align-items-center justify-content-around pt-5">
         <div class="selected-work-image order-sm-1 pl-sm-5">
           <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
         </div>
@@ -68,19 +68,24 @@
         <h2 class="font-weight-bold">Meet 3W</h2>
       </div>
       <div class="team-wrapper d-flex flex-wrap justify-content-center mb-5">
-
+      <div id="team-mate-hm" class="team-mate text-center m-2 flex-grow-1">
         <%= render 'shared/team_member_card',
               name: 'Hadrien Matringe',
               desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
               image_url: "https://placehold.it/100/100" %>
+      </div>
+      <div id="team-mate-ai" class="team-mate text-center m-2 flex-grow-1">
         <%= render 'shared/team_member_card',
               name: 'Ana Ivan',
               desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
               image_url: "https://placehold.it/100/100" %>
+      </div>
+      <div id="team-mate-ks" class="team-mate text-center m-2 flex-grow-1">
         <%= render 'shared/team_member_card',
               name: 'Kristian Sølling',
               desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
               image_url: "https://placehold.it/100/100" %>
+      </div>
       </div>
     </div>
   </section>
