@@ -12,68 +12,88 @@
         <h1 class="font-weight-bold text-uppercase"> <%= t('home.header') %> </h1>
         <p class="text-muted"> <%= t('home.subheader') %> </p>
       </div>
-      <div id="panel-hero" class="d-none d-md-block">
+      <div class="hero-illustration d-none d-md-block">
+        <%= image_tag 'https://via.placeholder.com/450x250/fbbd2c/808080' %>
       </div>
     </div>
   </section>
   <!-- Div photo office -->
-  <section>
-    <div class="h-85vh">
-      <%= image_tag "https://placehold.it/1200x550", class: "mt-5" %>
+  <section class="mt-md-5">
+    <div class="office-photo my-2 pb-2">
+      <%= image_tag 'https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' %>
     </div>
   </section>
-  <!-- Selected work -->
+  <!-- Div selected work -->
   <section>
-    <div class="text-center pb-5">
-      <h2 class="font-weight-bold">Selected work</h2>
-    </div>
-    <article id="selected-work-top">
-      <div class="d-flex flex-column-reverse flex-md-row justify-content-around">
-        <%= image_tag "https://placehold.it/400x500", class: "px-sm-5 flex-grow-1 flex-md-grow-0" %>
-        <div id="selected-work-top-panel" class="browser">
-          <div class="browser-header">
-            <span class="button close"></span>
-            <span class="button minimize"></span>
-            <span class="button maximize"></span>
-          </div>
-          <div class="browser-content"></div>
+    <div class="container">
+      <div class="text-center mt-5 pb-5">
+        <h2 class="font-weight-bold">Selected work</h2>
+      </div>
+      <!-- Project A -->
+      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-sm-5">
+        <div class="selected-work-image order-sm-1 pl-sm-5">
+          <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
         </div>
-        <div class="w-400px align-self-center pb-5">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero perspiciatis velit voluptas, impedit quasi veritatis quod rerum error doloribus. Assumenda, dignissimos esse culpa debitis architecto similique impedit dolore iste repellat.</p>
+        <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
+          <h3 class="mt-0">Discover</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
         </div>
       </div>
-    </article>
-    <article id="selected-work-bottom" class="pt-md-5">
-      <div class="d-flex flex-column flex-md-row justify-content-around">
-        <div class="w-400px align-self-center py-5">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero perspiciatis velit voluptas, impedit quasi veritatis quod rerum error doloribus. Assumenda, dignissimos esse culpa debitis architecto similique impedit dolore iste repellat.</p>
+      <!-- Project B -->
+      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
+        <div class="selected-work-image order-0 pr-sm-5">
+          <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
         </div>
-        <%= image_tag "https://placehold.it/400x500", class: "px-sm-5 flex-grow-1 flex-md-grow-0" %>
-        <div id="selected-work-bottom-panel" class="browser">
-          <div class="browser-header">
-            <span class="button close"></span>
-            <span class="button minimize"></span>
-            <span class="button maximize"></span>
-          </div>
-          <div class="browser-content"></div>
+        <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
+          <h3 class="mt-0">Discover</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
         </div>
       </div>
-    </article>
+      <!-- Project C -->
+      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
+        <div class="selected-work-image order-sm-1 pl-sm-5">
+          <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+        </div>
+        <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
+          <h3 class="mt-0">Discover</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- Meet the team -->
+  <!-- Meet 3W -->
   <section>
-    <div class="text-center py-5">
-      <h2 class="font-weight-bold">Meet the team</h2>
-    </div>
-    <%= render 'components/team_card' %>
-  </section>
-  <section class="background-color-panel d-flex align-items-start h-65vh p-5 mt-5">
-    <div class="form-wrapper w-700px">
-      <h2 class="font-weight-bold"> <%= t('contact-form.form-header') %> </h2>
-      <%= render 'contact_requests/form' %>
-    </div>
-  </section>
+    <div class="container">
+      <div class="text-center mt-5 pb-5">
+        <h2 class="font-weight-bold">Meet 3W</h2>
+      </div>
+      <div class="team-wrapper d-flex flex-wrap justify-content-center mb-5">
 
-
+        <%= render 'shared/team_member_card',
+              name: 'Hadrien Matringe',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+              image_url: "https://placehold.it/100/100" %>
+        <%= render 'shared/team_member_card',
+              name: 'Ana Ivan',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+              image_url: "https://placehold.it/100/100" %>
+        <%= render 'shared/team_member_card',
+              name: 'Kristian Sølling',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+              image_url: "https://placehold.it/100/100" %>
+      </div>
+    </div>
+  </section>
+  <!-- Contact form -->
+  <section class="background-lilac py-3 p-sm-5">
+    <div class="container">
+      <div class="form-wrapper">
+        <h2 class="font-weight-bold"> <%= t('contact-form.form-header') %> </h2>
+        <%= render 'contact_requests/form' %>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
 </div>
 
