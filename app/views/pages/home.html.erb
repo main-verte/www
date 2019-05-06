@@ -71,39 +71,20 @@
             <h2 class="font-weight-bold">Meet 3W</h2>
           </div>
           <div class="team-wrapper d-flex flex-wrap justify-content-center mb-5">
-            <div class="team-mate text-center m-2 flex-grow-1">
-              <div class="team-mate-inner d-flex flex-column align-items-center p-4">
-                <div class="team-header p-4">
-                  <%= image_tag "https://placehold.it/100/100", class: "rounded-circle" %>
-                </div>
-                <div class="team-body">
-                  <h4>Hadrien Matringe</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                </div>
-              </div>
-            </div>
-            <div class="team-mate text-center m-2 flex-grow-1">
-              <div class="team-mate-inner d-flex flex-column align-items-center p-4">
-                <div class="team-header p-4">
-                  <%= image_tag "https://placehold.it/100/100", class: "rounded-circle" %>
-                </div>
-                <div class="team-body">
-                  <h4>Ana Ivan</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                </div>
-              </div>
-            </div>
-            <div class="team-mate text-center m-2 flex-grow-1">
-              <div class="team-mate-inner d-flex flex-column align-items-center p-4">
-                <div class="team-header p-4">
-                  <%= image_tag "https://placehold.it/100/100", class: "rounded-circle" %>
-                </div>
-                <div class="team-body">
-                  <h4>Kristian Sølling</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                </div>
-              </div>
-            </div>
+
+            <%= render 'shared/team_member_card',
+                  name: 'Hadrien Matringe',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+                  image_url: "https://placehold.it/100/100" %>
+            <%= render 'shared/team_member_card',
+                  name: 'Ana Ivan',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+                  image_url: "https://placehold.it/100/100" %>
+            <%= render 'shared/team_member_card',
+                  name: 'Kristian Sølling',
+                  desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+                  image_url: "https://placehold.it/100/100" %>
+
           </div>
         </div>
       </section>
