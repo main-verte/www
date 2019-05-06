@@ -39,8 +39,19 @@ PreCommit:
     problem_on_unmodified_line: report
     command: ['bundle', 'exec', 'rubocop']
 
-# Annotate
-# ERD
+PreCommit:
+  RuboCop:
+    enabled: true
+    on_warn: fail
+    problem_on_unmodified_line: report
+    command: ['bundle', 'exec', 'annotate']
+
+PreCommit:
+  RuboCop:
+    enabled: true
+    on_warn: fail
+    problem_on_unmodified_line: report
+    command: ['bundle', 'exec', 'erd']
 
 PrePush:
   Brakeman:
