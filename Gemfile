@@ -19,6 +19,8 @@ gem 'invisible_captcha'
 gem 'devise-i18n'
 gem 'rails-i18n'
 
+gem 'cloudinary', '~> 1.9.1'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'letter_opener'
