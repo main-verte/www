@@ -6,3 +6,9 @@ fr:
     form-header: "Entrer en contact avec nous"
     message-header: "Message"
     submit: "Envoyer le message"
+    notice: "Merci pour votre message"
+  company-info:
+    address: "Njalsgade 19D, 1er. étage<br>
+    Founders House - 2300 Copenhague"
+    rights-reserved: "Tous droits réservés"
+

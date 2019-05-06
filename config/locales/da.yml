@@ -6,3 +6,9 @@ da:
     form-header: "Kom i kontakt med os"
     message-header: "Besked"
     submit: "Send besked"
+    notice: "Tak for din besked"
+  company-info:
+    address: "Njalsgade 19D, 1. sal<br>
+    Founders House - 2300 København"
+    rights-reserved: "Alle rettigheder forbeholdt"
+
