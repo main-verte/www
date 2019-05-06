@@ -33,14 +33,21 @@
 #    enabled: true # Generate a tags file with `ctags` each time HEAD changes
 
 PreCommit:
+  Annotate:
+    enabled: true
+    on_warn: fail
+    problem_on_unmodified_line: report
+    command: ['bundle', 'exec', 'annotate']
+  ERD:
+    enabled: true
+    on_warn: fail
+    problem_on_unmodified_line: report
+    command: ['bundle', 'exec', 'erd']
   RuboCop:
     enabled: true
     on_warn: fail
     problem_on_unmodified_line: report
     command: ['bundle', 'exec', 'rubocop']
-
-# Annotate
-# ERD
 
 PrePush:
   Brakeman:
