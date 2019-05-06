@@ -38,7 +38,8 @@ en:
     message-header: "Message"
     submit: "Send message"
     notice: "Thank you for your message"
-#  company-info:
-#    city: "Copenhagen"
-#    rights-reserved: "All rights reserved"
+  company-info:
+    address: "Njalsgade 19D, 1st. floor<br>
+    Founders House - 2300 Copenhagen"
+    rights-reserved: "All rights reserved"
 
