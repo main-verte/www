@@ -1,22 +1,40 @@
 <div class="container-fluid p-0">
-  <div class="d-flex flex-column">
-    <header class="d-flex justify-content-center pt-5">
-      <%= link_to root_path do %>
-      <%= image_tag "https://placehold.it/50/50", class: "rounded-circle" %>
-      <% end %>
-    </header>
-    <!-- Hero -->
-    <main>
-      <section class="hero text-center py-5 mt-md-5">
-        <div class="container">
-          <div class="d-flex flex-sm-row flex-column">
-            <div class="align-self-center pr-md-5">
-              <h1 class="font-weight-bold text-uppercase">Digital agency doing business</h1>
-              <p class="text-muted"> <%= t('home.subheader') %> </p>
-            </div>
-            <div class="hero-illustration pl-md-5 mt-2 pb-2">
-              <%= image_tag 'https://via.placeholder.com/450x300/fbbd2c/808080' %>
-            </div>
+  <!-- Logo -->
+  <header class="background-color-panel d-flex justify-content-center pt-5">
+    <%= link_to root_path do %>
+    <%= image_tag "https://placehold.it/50/50", class: "rounded-circle" %>
+    <% end %>
+  </header>
+  <!-- Hero -->
+  <section>
+    <div class="background-color-panel d-flex flex-column flex-md-row align-items-center justify-content-around h-65vh">
+      <div class="align-self-center text-center">
+        <h1 class="font-weight-bold text-uppercase"> <%= t('home.header') %> </h1>
+        <p class="text-muted"> <%= t('home.subheader') %> </p>
+      </div>
+      <div id="panel-hero" class="d-none d-md-block">
+      </div>
+    </div>
+  </section>
+  <!-- Div photo office -->
+  <section>
+    <div class="h-85vh">
+      <%= image_tag "https://placehold.it/1200x550", class: "mt-5" %>
+    </div>
+  </section>
+  <!-- Selected work -->
+  <section>
+    <div class="text-center pb-5">
+      <h2 class="font-weight-bold">Selected work</h2>
+    </div>
+    <article id="selected-work-top">
+      <div class="d-flex flex-column-reverse flex-md-row justify-content-around">
+        <%= image_tag "https://placehold.it/400x500", class: "px-sm-5 flex-grow-1 flex-md-grow-0" %>
+        <div id="selected-work-top-panel" class="browser">
+          <div class="browser-header">
+            <span class="button close"></span>
+            <span class="button minimize"></span>
+            <span class="button maximize"></span>
           </div>
         </div>
       </section>
@@ -106,6 +124,7 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </section>
       <!-- Contact form -->
       <section class="background-lilac py-3 p-sm-5">
@@ -118,5 +137,25 @@
       </section>
     </main>
   </div>
+=======
+      </div>
+    </article>
+  </section>
+  <!-- Meet the team -->
+  <section>
+    <div class="text-center py-5">
+      <h2 class="font-weight-bold">Meet the team</h2>
+    </div>
+    <%= render 'components/team_card' %>
+  </section>
+  <section class="background-color-panel d-flex align-items-start h-65vh p-5 mt-5">
+    <div class="form-wrapper w-700px">
+      <h2 class="font-weight-bold"> <%= t('contact-form.form-header') %> </h2>
+      <%= render 'contact_requests/form' %>
+    </div>
+  </section>
+
+
+>>>>>>> adf4d2009fcfff1de3197affe6a86fc878c8d204
 </div>
 
