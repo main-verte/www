@@ -1,8 +1,9 @@
 <div class="background-color-panel d-flex flex-column  flex-md-row align-items-start justify-content-between px-5">
   <div class="px-3 px-sm-0">
-    <%= CompanyInfo.copyrights %>
+    <%#= CompanyInfo.copyrights %>
+    <%= t('company-info.rights-reserved') %>
   </div>
   <div class="p-3 px-sm-0">
-    <%= CompanyInfo.address %>
+    <%= t('company-info.address').html_safe %>
   </div>
 </div>
