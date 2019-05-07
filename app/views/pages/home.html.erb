@@ -24,7 +24,7 @@
   <!-- Hero -->
   <section id="menu-banner">
     <div class="d-flex flex-column flex-md-row align-items-center justify-content-around h-65vh">
-      <div class="align-self-center text-center">
+      <div class="hero-text align-self-center text-center">
         <h1 class="font-weight-bold text-uppercase"> <%= t('home.header') %> </h1>
         <p class="text-muted"> <%= t('home.subheader') %> </p>
       </div>
@@ -45,36 +45,26 @@
       <div class="text-center mt-5 pb-5">
         <h2 class="font-weight-bold">Selected work</h2>
       </div>
-      <!-- Project A -->
-      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-sm-5">
-        <div class="selected-work-image order-sm-1 pl-sm-5">
-          <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-        </div>
-        <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
-          <h3 class="mt-0">Discover</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
-        </div>
-      </div>
-      <!-- Project B -->
-      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
-        <div class="selected-work-image order-0 pr-sm-5">
-          <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-        </div>
-        <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
-          <h3 class="mt-0">Discover</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
-        </div>
-      </div>
-      <!-- Project C -->
-      <div class="selected-work d-flex flex-column flex-sm-row  align-items-center justify-content-around pt-5">
-        <div class="selected-work-image order-sm-1 pl-sm-5">
-          <%= image_tag 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-        </div>
-        <div class="selected-work-body text-center text-sm-left pt-5 pt-sm-0">
-          <h3 class="mt-0">Discover</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos enim itaque nesciunt corporis voluptatibus, excepturi minus delectus velit, possimus quisquam facilis reiciendis ratione, adipisci tenetur labore.</p>
-        </div>
-      </div>
+      <%= render 'shared/project_card',
+        name: 'Project A',
+        klass: 'flex-sm-row',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+      <%= render 'shared/project_card',
+        name: 'Project B',
+        klass: 'flex-sm-row-reverse',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+      <%= render 'shared/project_card',
+        name: 'Project C',
+        klass: 'flex-sm-row',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+      <%= render 'shared/project_card',
+        name: 'Project D',
+        klass: 'flex-sm-row-reverse',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
     </div>
   </section>
   <!-- Meet 3W -->
@@ -84,19 +74,18 @@
         <h2 class="font-weight-bold">Meet 3W</h2>
       </div>
       <div class="team-wrapper d-flex flex-wrap justify-content-center mb-5">
-
         <%= render 'shared/team_member_card',
-              name: 'Hadrien Matringe',
-              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-              image_url: "https://placehold.it/100/100" %>
+          name: 'Hadrien Matringe',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+          image_url: "https://placehold.it/100/100" %>
         <%= render 'shared/team_member_card',
-              name: 'Ana Ivan',
-              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-              image_url: "https://placehold.it/100/100" %>
+          name: 'Ana Ivan',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+          image_url: "https://placehold.it/100/100" %>
         <%= render 'shared/team_member_card',
-              name: 'Kristian Sølling',
-              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-              image_url: "https://placehold.it/100/100" %>
+          name: 'Kristian Sølling',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+          image_url: "https://placehold.it/100/100" %>
       </div>
     </div>
   </section>

@@ -44,6 +44,10 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
   gem 'launchy'
+  gem 'webdrivers', '~> 3.0'
+end
+
+group :test do
+  gem 'simplecov', require: false
 end
