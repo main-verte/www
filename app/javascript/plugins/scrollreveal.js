@@ -4,27 +4,27 @@ window.sr = new ScrollReveal({
   reset: false
 });
 
-sr.reveal(".hero-text",{
+sr.reveal("#project_a",{
   origin: "left",
-  distance: "500px",
+  distance: "300px",
   duration: 1000
 });
 
-sr.reveal(".hero-illustration",{
+sr.reveal("#project_b",{
   origin: "right",
-  distance: "500px",
+  distance: "300px",
   duration: 1000
 });
 
-sr.reveal(".office-photo",{
-  origin: "bottom",
-  distance: "500px",
+sr.reveal("#project_c",{
+  origin: "left",
+  distance: "300px",
   duration: 1000
 });
 
-sr.reveal(".selected-work",{
-  origin: "bottom",
-  distance: "500px",
+sr.reveal("#project_d",{
+  origin: "right",
+  distance: "300px",
   duration: 1000
 });
 
@@ -37,17 +37,17 @@ sr.reveal("#team-mate-hm",{
 sr.reveal("#team-mate-ai",{
   origin: "bottom",
   distance: "500px",
-  duration: 1500
+  duration: 1300
 });
 
 sr.reveal("#team-mate-ks",{
   origin: "bottom",
   distance: "500px",
-  duration: 2000
+  duration: 1600
 });
 
 sr.reveal(".form-wrapper",{
   origin: "right",
   distance: "1000px",
-  duration: 2000
+  duration: 1800
 });
