@@ -36,9 +36,9 @@
   a {
     color: $gray-700;
     text-decoration: none;
-  &:hover {
-    color: $gray-900;
-  }
+    &:hover {
+      color: $gray-900;
+    }
   }
 }
 
@@ -52,7 +52,8 @@
   transform:translate(9999px);
   transition: opacity .2s ease-in-out;
   opacity: 0;
+}
 
 .color-change {
   background-color: $white;
-
+}
