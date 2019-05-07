@@ -47,3 +47,7 @@ group :development, :test do
   gem 'chromedriver-helper'
   gem 'launchy'
 end
+
+group :test do
+  gem 'simplecov', require: false
+end
