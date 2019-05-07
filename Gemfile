@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.3'
+ruby '2.6.1'
 
 gem 'bootsnap', require: false
 gem 'devise'
@@ -18,6 +18,8 @@ gem 'webpacker'
 gem 'invisible_captcha'
 gem 'devise-i18n'
 gem 'rails-i18n'
+
+gem 'cloudinary', '~> 1.9.1'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

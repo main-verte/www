@@ -1,9 +1,14 @@
+require: rubocop-performance
+
 AllCops:
   Exclude:
     - bin/**/*
     - db/**/*
     - config/**/*
     - node_modules/**/*
+
+LineLength:
+  Max: 120
 
 ConditionalAssignment:
   Enabled: false
@@ -29,11 +34,16 @@ MissingRespondToMissing:
   Enabled: false
 MethodMissingSuper:
   Enabled: false
-Style/FrozenStringLiteralComment:
-  Enabled: false
-LineLength:
-  Max: 120
-Style/EmptyMethod:
-  Enabled: false
+
 Bundler/OrderedGems:
   Enabled: false
+
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: True
+  Exclude:
+    - test/test_helper.rb
