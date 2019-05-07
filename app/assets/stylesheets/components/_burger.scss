@@ -14,7 +14,7 @@
 .burger-icon, .burger-icon::before, .burger-icon::after {
   display: block;
   width: 15px;
-  height: 1.5px;
+  height: 1px;
   background-color: $gray-900;
   outline: .5px solid transparent;
   transition-property: background-color, transform;
