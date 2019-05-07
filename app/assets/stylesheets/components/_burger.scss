@@ -1,0 +1,47 @@
+.menu-button {
+  display: inline-block;
+  padding: .5em;
+  background-color: $white;
+}
+
+.burger-icon {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+.burger-icon, .burger-icon::before, .burger-icon::after {
+  display: block;
+  width: 15px;
+  height: 1.5px;
+  background-color: $gray-900;
+  outline: .5px solid transparent;
+  transition-property: background-color, transform;
+  transition-duration: 0.3s;
+}
+
+.burger-icon::before, .burger-icon::after {
+  position: absolute;
+  content: "";
+}
+
+.burger-icon::before {
+  top: -8px;
+}
+
+.burger-icon::after {
+  top: 8px;
+}
+
+.menu-button.is-active .burger-icon {
+  background-color: transparent;
+}
+
+.menu-button.is-active .burger-icon::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-button.is-active .burger-icon::after {
+  transform: translateY(-8px) rotate(-45deg);
+}

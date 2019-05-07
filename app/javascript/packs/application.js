@@ -1,3 +1,3 @@
 import "bootstrap";
-import {showMenu} from "../components/showmenu";
-showMenu()
+import {animateBurgerShowMenu} from "../components/animate-show-menu";
+animateBurgerShowMenu()

@@ -1,5 +1,5 @@
 // Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Raleway:400,100,300,500,600,700");
 
 // Define fonts for body and headers
 $body-font: "Open Sans", "Helvetica", "sans-serif";
@@ -13,7 +13,7 @@ $small-font-size:             80% !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
+$font-weight-bold:            600 !default;
 $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;

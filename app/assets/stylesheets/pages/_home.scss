@@ -1,27 +1,4 @@
 // Specific CSS for your home-page
-.menu-options {
-  position: absolute;
-  z-index: 15;
-  background-color: $white;
-  display: none;
-  ul {
-    padding: 15px 85px;
-  }
-  li {
-    list-style: none;
-    line-height: 65px;
-    font-size: $h2-font-size;
-    font-weight: $font-weight-bold;
-  }
-  a {
-    text-decoration: none;
-  }
-}
-
-.show {
-  display: block;
-}
-
 .hero-illustration img{
   width: 100%;
   max-width: 450px;
