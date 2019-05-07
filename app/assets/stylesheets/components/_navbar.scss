@@ -12,8 +12,9 @@
     left: 30px;
     top: 50px;
     cursor: pointer;
-    span {
-      font-weight: $font-weight-bolder;
+    p {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
     }
   }
 }
