@@ -24,8 +24,20 @@ sr.reveal(".office-photo",{
 
 sr.reveal(".selected-work",{
   origin: "bottom",
+  distance: "300px",
+  duration: 600
+});
+
+sr.reveal(".selected-work-image",{
+  origin: "bottom",
   distance: "500px",
   duration: 1000
+});
+
+sr.reveal(".selected-work-body",{
+  origin: "bottom",
+  distance: "500px",
+  duration: 1500
 });
 
 sr.reveal("#team-mate-hm",{

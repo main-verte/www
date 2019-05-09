@@ -1,5 +1,4 @@
 // Specific CSS for your home-page
-
 .hero-illustration img{
   width: 100%;
   max-width: 450px;
@@ -12,6 +11,15 @@
   max-width: 1040px;
   height: auto;
   margin: 0 auto;
+}
+
+.selected-work-title {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: 2s ease-in-out;
 }
 
 .selected-work-image img {
