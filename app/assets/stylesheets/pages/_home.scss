@@ -13,9 +13,14 @@
   margin: 0 auto;
 }
 
-.selected-work-title {
-  opacity: 0;
+.team-wrapper {
+  margin-top: 45%;
+  margin-bottom: 15%;
 }
+
+// .selected-work-title {
+//   opacity: 0;
+// }
 
 .visible {
   opacity: 1;
@@ -40,15 +45,26 @@
   margin-top: 15%;
 }
 
+.form-container {
+  height: 50vh;
+  position: relative;
+}
+
 .form-wrapper {
-  background: white;
+  background: $white;
   padding: 20px 50px;
+  position: absolute;
+  top: -30%;
+  left: 20%;
+  transform: translateZ(0.2px);
+  box-shadow: 0.2px -0.2px 1.5px 0px rgba(230, 230, 230, 1);
 }
 
 .team-mate {
   width: 270px;
   max-width: 300px;
-  border: 1px solid $light-gray;
+  background: $white;
+  box-shadow: 0.2px -0.2px 1.5px 0px rgba(230, 230, 230, 1);
 }
 
 .background-lilac {

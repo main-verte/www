@@ -1,4 +1,4 @@
-<div class="container-fluid p-0">
+<div class="parallax">
   <!-- Logo -->
   <header class="background-color-panel d-flex justify-content-center pt-5">
     <%= link_to root_path do %>
@@ -23,66 +23,65 @@
       <%= image_tag 'https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80' %>
     </div>
   </section>
-  <!-- Div selected work -->
-  <section>
-    <div class="container">
+    <!-- Div selected work -->
+    <div class="parallax__group">
       <div class="selected-work-title text-center mt-5 pb-5">
         <h2 class="font-weight-bold">Selected work</h2>
       </div>
-      <%= render 'shared/project_card',
-        name: 'Project A',
-        klass: 'flex-sm-row',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-      <%= render 'shared/project_card',
-        name: 'Project B',
-        klass: 'flex-sm-row-reverse',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-      <%= render 'shared/project_card',
-        name: 'Project C',
-        klass: 'flex-sm-row',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-      <%= render 'shared/project_card',
-        name: 'Project D',
-        klass: 'flex-sm-row-reverse',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="panel-background"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="panel-base">
+          <div class="panel-base--inner"></div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--text">
+        <div class="project-name">Project A</div>
+        <div class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptatibus eligendi totam dolorum aut optio eveniet rerum, adipisci reprehenderit facilis itaque ad officia hic est, eos placeat, nulla magnam repellendus.</div>
+      </div>
     </div>
-  </section>
+    <div class="parallax__group">
+      <div class="parallax__layer-two parallax__layer--back">
+        <div class="panel-background-two"></div>
+      </div>
+      <div class="parallax__layer-two parallax__layer--base">
+        <div class="panel-base-two">
+          <div class="panel-base--inner-two"></div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--text-two">
+        <div class="project-name">PROJECT</div>
+        <div class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptatibus eligendi totam dolorum aut optio eveniet rerum, adipisci reprehenderit facilis itaque ad officia hic est, eos placeat, nulla magnam repellendus.</div>
+      </div>
+    </div>
   <!-- Meet 3W -->
-  <section>
-    <div class="container">
-      <div class="text-center mt-5 pb-5">
-        <h2 class="font-weight-bold">Meet 3W</h2>
-      </div>
-      <div class="team-wrapper d-flex flex-wrap justify-content-center mb-5">
-        <%= render 'shared/team_member_card',
-          name: 'Hadrien Matringe',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-          image_url: "https://placehold.it/100/100" %>
-        <%= render 'shared/team_member_card',
-          name: 'Ana Ivan',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-          image_url: "https://placehold.it/100/100" %>
-        <%= render 'shared/team_member_card',
-          name: 'Kristian Sølling',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-          image_url: "https://placehold.it/100/100" %>
-      </div>
+  <section class="team-wrapper">
+    <div class="text-center mt-5 pb-5">
+      <h2 class="font-weight-bold">Meet 3W</h2>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center mb-5">
+      <%= render 'shared/team_member_card',
+      name: 'Hadrien Matringe',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      image_url: "https://placehold.it/100/100" %>
+      <%= render 'shared/team_member_card',
+      name: 'Ana Ivan',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      image_url: "https://placehold.it/100/100" %>
+      <%= render 'shared/team_member_card',
+      name: 'Kristian Sølling',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      image_url: "https://placehold.it/100/100" %>
     </div>
   </section>
   <!-- Contact form -->
-  <section class="background-lilac py-3 p-sm-5">
-    <div class="container">
+  <section class="form-container background-lilac py-3 p-sm-5">
       <div class="form-wrapper">
         <h2 class="font-weight-bold"> <%= t('contact-form.form-header') %> </h2>
         <%= render 'contact_requests/form' %>
       </div>
-    </div>
   </section>
-</main>
-</div>
+  <%= render 'shared/footer' %>
 </div>
 

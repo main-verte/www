@@ -7,5 +7,9 @@ function changeColorNavbar(){
       sidenav.classList.remove('color-change');
     }
   });
+  window.addEventListener('scroll', function() {
+    console.log(window.scrollY)
+
+  });
 }
 export { changeColorNavbar };

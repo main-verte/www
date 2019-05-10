@@ -1,0 +1,140 @@
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
+.parallax__group {
+  padding: 10px 100px;
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.parallax__layer-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -20%;
+}
+
+.parallax__layer-three {
+  position: absolute;
+  transform: translateZ(0.1px);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -20%;;
+}
+
+.parallax__layer--back {
+  transform: translateZ(-0.3px) scale(1.5);
+}
+
+.panel-background {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  transform: translate(13%);
+  width: 500px;
+  height: 600px;
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+}
+
+.panel-background-two {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translate(15%);
+  width: 500px;
+  height: 600px;
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+}
+
+.panel-background-three {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translate(15%);
+  width: 500px;
+  height: 600px;
+  background: linear-gradient(to right, #C4E0E5, #a38e9e);
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.panel-base {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+}
+
+.panel-base-two {
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+}
+
+.panel-base-three {
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+}
+
+.panel-base--inner {
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  width: 600px;
+  height: 350px;
+  background: linear-gradient(to right, #C4E0E5, #f4f4);
+}
+
+.panel-base--inner-two {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 600px;
+  height: 350px;
+  background: linear-gradient(to right, #a38e9e, #f4f4);
+}
+
+.panel-base--inner-three {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 600px;
+  height: 350px;
+  background: linear-gradient(to right, #C4E0E5, #a38e9e);
+}
+
+.parallax__layer--text {
+  position: absolute;
+  left: 5%;
+  top: 60%;
+  width: 400px;
+  height: 350px;
+}
+
+.parallax__layer--text-two {
+  position: absolute;
+  left: 60%;
+  top: 80%;
+  width: 400px;
+  height: 350px;
+}
