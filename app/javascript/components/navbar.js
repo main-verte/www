@@ -8,5 +8,5 @@ function changeColorNavbar(){
     }
   });
 }
-console.log(sidenav);
+
 export { changeColorNavbar };
