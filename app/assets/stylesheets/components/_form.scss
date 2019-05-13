@@ -1,0 +1,10 @@
+.form-wrapper {
+  background: white;
+  padding: 20px 50px;
+}
+
+@include media-breakpoint-up(sm) {
+  .form-wrapper {
+    width: 550px;
+  }
+}

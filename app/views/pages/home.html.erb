@@ -1,7 +1,6 @@
 <div class="container-fluid p-0">
   <!-- Menu -->
-  <section class="menu-options h-85vh">
-    <div class="h-65vh w-100vw">
+  <section class="menu-options h-100vh">
       <ul>
         <li class="font-weight-custom-bold text-uppercase">
           <%= link_to 'About', about_path %>
@@ -13,7 +12,6 @@
           <%= link_to 'Contact', about_path %>
         </li>
       </ul>
-    </div>
   </section>
   <!-- Hero -->
   <section id="menu-banner">
@@ -34,44 +32,32 @@
     </div>
   </section>
   <!-- Div selected work -->
-  <section>
-    <div class="container">
+  <section class="work-section">
+    <div class="container h-100vh">
       <div class="text-center mt-5 pb-5">
         <h2 class="font-weight-custom-bold">Selected work</h2>
       </div>
       <%= render 'shared/project_card',
-        project_id: 'project_a',
-        name: 'Project A',
-        klass: 'flex-sm-row',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+      project_id: 'project_a',
+      name: 'Project A',
+      klass: 'flex-sm-row',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
       <%= render 'shared/project_card',
-        project_id: 'project_b',
-        name: 'Project B',
-        klass: 'flex-sm-row-reverse',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-      <%= render 'shared/project_card',
-        project_id: 'project_c',
-        name: 'Project C',
-        klass: 'flex-sm-row',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
-      <%= render 'shared/project_card',
-        project_id: 'project_d',
-        name: 'Project D',
-        klass: 'flex-sm-row-reverse',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-        image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
+      project_id: 'project_b',
+      name: 'Project B',
+      klass: 'flex-sm-row-reverse',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      image_url: 'https://via.placeholder.com/350x250/fbbd2c/808080' %>
     </div>
   </section>
   <!-- Meet 3W -->
-  <section>
+  <div class="text-center mt-5 pb-5">
+    <h2 class="font-weight-custom-bold">Meet 3W</h2>
+  </div>
+  <section class="team-section mt-5 position-relative">
     <div class="container">
-      <div class="text-center mt-5 pb-5">
-        <h2 class="font-weight-custom-bold">Meet 3W</h2>
-      </div>
-      <div class="team-wrapper d-flex flex-wrap justify-content-center mb-5">
+      <div class="team-wrapper d-flex flex-wrap justify-content-center position-absolute">
         <%= render 'shared/team_member_card',
           name_id: 'team-mate-hm',
           name: 'Hadrien Matringe',
@@ -91,15 +77,13 @@
     </div>
   </section>
   <!-- Contact form -->
-  <section class="background-lilac py-3 p-sm-5">
+  <section class="form-section h-55vh background-lilac py-4 mt-5 position-relative">
     <div class="container">
-      <div class="form-wrapper">
+      <div class="form-wrapper position-absolute">
         <h2 class="font-weight-custom-bold"> <%= t('contact-form.form-header') %> </h2>
-        <%= render 'contact_requests/form' %>
+          <%= render 'contact_requests/form' %>
       </div>
     </div>
   </section>
-</main>
-</div>
 </div>
 
