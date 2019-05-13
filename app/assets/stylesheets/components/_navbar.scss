@@ -1,27 +1,38 @@
 #sidenav {
   position: fixed;
   z-index: 101;
-  top: 0;
-  left: 0;
-  height: 190px;
-  width: 90px;
-  font-size: $small-font-size;
-  font-weight: bold;
-  .content {
-    position: absolute;
-    left: 30px;
-    top: 50px;
-    cursor: pointer;
-    p {
-      writing-mode: vertical-rl;
-      text-orientation: upright;
+  bottom: 0;
+  width: 100%;
+  background: $white;
+}
+
+@include media-breakpoint-up(sm) {
+  #sidenav {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    height: 190px;
+    width: 90px;
+    font-size: $small-font-size;
+    font-weight: bold;
+    .content {
+      position: absolute;
+      left: 30px;
+      top: 50px;
+      cursor: pointer;
+      p {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+      }
     }
   }
 }
-
 .menu-options {
   position: fixed;
   z-index: 100;
+  width: 100%;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   background-color: $white;
@@ -52,7 +63,7 @@
 }
 
 .hide {
-  transform:translate(9999px);
+  transform: translate(9999px);
   transition: opacity .2s ease-in-out;
   opacity: 0;
 }
